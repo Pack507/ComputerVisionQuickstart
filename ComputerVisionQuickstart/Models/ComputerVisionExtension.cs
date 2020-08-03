@@ -49,22 +49,22 @@ namespace ComputerVisionQuickstart.Models
         * Analyze URL image. Extracts captions, categories, tags, objects, faces, racy/adult content,
         * brands, celebrities, landmarks, color scheme, and image types.
         */
-        public async Task AnalyzeImageUrl(ComputerVisionClient client, string imageUrl)
-        {
-            Console.WriteLine("----------------------------------------------------------");
-            Console.WriteLine("ANALYZE IMAGE - URL");
-            Console.WriteLine();
+        //public async Task AnalyzeImageUrl(ComputerVisionClient client, string imageUrl)
+        //{
+        //    Console.WriteLine("----------------------------------------------------------");
+        //    Console.WriteLine("ANALYZE IMAGE - URL");
+        //    Console.WriteLine();
 
-            // Creating a list that defines the features to be extracted from the image. 
-            List<VisualFeatureTypes> features = new List<VisualFeatureTypes>()
-            {
-              VisualFeatureTypes.Categories, VisualFeatureTypes.Description,
-              VisualFeatureTypes.Faces, VisualFeatureTypes.ImageType,
-              VisualFeatureTypes.Tags, VisualFeatureTypes.Adult,
-              VisualFeatureTypes.Color, VisualFeatureTypes.Brands,
-              VisualFeatureTypes.Objects
-            };
-        }
+        //    // Creating a list that defines the features to be extracted from the image. 
+        //    List<VisualFeatureTypes> features = new List<VisualFeatureTypes>()
+        //    {
+        //      VisualFeatureTypes.Categories, VisualFeatureTypes.Description,
+        //      VisualFeatureTypes.Faces, VisualFeatureTypes.ImageType,
+        //      VisualFeatureTypes.Tags, VisualFeatureTypes.Adult,
+        //      VisualFeatureTypes.Color, VisualFeatureTypes.Brands,
+        //      VisualFeatureTypes.Objects
+        //    };
+        //}
 
         /*
         * BATCH READ FILE - URL IMAGE
