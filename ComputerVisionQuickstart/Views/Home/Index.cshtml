@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    Customer Datos = ViewBag.DatosNoemi;
+
+    <p>Cédula: @Datos.Identification </p>
+    <p>Nombre Completo: @Datos.FullName </p>
+    <p>Edad: @Datos.Age </p>
+}
+
+<br />
+
+@{
+    <p>Cédula :@ViewBag.DatosNoemi.Identification </p>
+    <p>Nombre Completo: @ViewBag.DatosNoemi.FullName </p>
+    <p>Edad: @ViewBag.DatosNoemi.Age </p>
+}
+
+<br />
+
+@{
+    Customer Info = ViewBag.DatosJose;
+
+    <p>Cédula: @Info.Identification </p>
+    <p>Nombre Completo: @Info.FullName </p>
+    <p>Edad: @Info.Age </p>
+}
+
+<br />
+
+@{
+    <p>Cédula :@ViewBag.DatosJose.Identification </p>
+    <p>Nombre Completo: @ViewBag.DatosJose.FullName </p>
+    <p>Edad: @ViewBag.DatosJose.Age </p>
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Noemi</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
