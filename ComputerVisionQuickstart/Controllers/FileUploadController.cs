@@ -7,6 +7,7 @@ using ComputerVisionQuickstart.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
 namespace ComputerVisionQuickstart.Controllers
@@ -15,10 +16,12 @@ namespace ComputerVisionQuickstart.Controllers
     [ApiController]
     public class FileUploadController : Controller
     {
+        private readonly IConfiguration _configuration;
         private readonly IWebHostEnvironment webHostEnvironment;
 
-        public FileUploadController(IWebHostEnvironment hostEnvironment)
+        public FileUploadController(IWebHostEnvironment hostEnvironment, IConfiguration configuration)
         {
+            _configuration = configuration;
             webHostEnvironment = hostEnvironment;
         }
 
@@ -55,12 +58,26 @@ namespace ComputerVisionQuickstart.Controllers
 
                     filePaths.Add(targetPath);
 
+                    /* -------------------------------------------------------- URL -------------------------------------------------------- */
+
+                    ComputerVisionExtension Obj = new ComputerVisionExtension(_configuration);
+
+                    //var ResultAnalyzeFileByUrl = await Obj.AnalyzeFileByUrl("https://www.panama24horas.com.pa/wp-content/uploads/2018/01/cedula-inteligente-690x449.jpg");
+
+                    /* -------------------------------------------------------- URL -------------------------------------------------------- */
+
+                    /* ------------------------------------------------------ STREAM -------------------------------------------------------- */
+
+                    var ResultAnalyzeFileByStream = await Obj.AnalyzeFileByStream(formFile.OpenReadStream());
+
+                    /* ------------------------------------------------------ STREAM -------------------------------------------------------- */
+
                     using (var stream = new FileStream(uploadsFolder, FileMode.Create))
                     {
                         await formFile.CopyToAsync(stream);
                     }
 
-                    Result.Add(new ResponseModel(){ FileName = newFileName, PathFile = uploadsFolder, ResponseComputerVision = null });
+                    Result.Add(new ResponseModel() { FileName = newFileName, PathFile = uploadsFolder, ResponseOCR = ResultAnalyzeFileByStream });
                 }
             }
 

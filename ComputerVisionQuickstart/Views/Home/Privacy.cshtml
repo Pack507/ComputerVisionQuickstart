@@ -46,9 +46,21 @@
 
     foreach (var FileData in ListFile)
     {
-        <br />
-        <img src="@("/Documents/"+FileData.FileName)" alt="Sample Image" />
-        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <br />
+                    <img src="@("/Documents/"+FileData.FileName)" alt="Sample Image" />
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    @foreach (var lineText in FileData.ResponseOCR)
+                    {
+                        <p>@lineText</p>
+                    }
+                </div>
+            </div>
+        </div>
     }
 }
 

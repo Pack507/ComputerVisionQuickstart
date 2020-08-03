@@ -9,6 +9,6 @@ namespace ComputerVisionQuickstart.Models
     {
         public string FileName { get; set; }
         public string PathFile { get; set; }
-        public object ResponseComputerVision { get; set; }
+        public List<string> ResponseOCR { get; set; }
     }
 }

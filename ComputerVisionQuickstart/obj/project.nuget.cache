@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dRqTvVzoY2zAyk2nC8i3gAz2eHgosdUEBwaU9EP5/181iH4S6YeA1w7M0UMH9fcvzRHOub7Nq1muiAX0/DjOzA==",
+  "dgSpecHash": "buOB3ro3bX+QnHEGrNDnZMjYlzVebtNDOBkVHEZVFHAtcFL04uAMPeDrPI0FcSnwa2t2EKWiwvvRGRpJ4bpeiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jgarc\\Documents\\Prototypes HNL\\ComputerVisionQuickstart\\ComputerVisionQuickstart\\ComputerVisionQuickstart.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.0.0\\microsoft.aspnetcore.razor.language.3.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
+    "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\5.0.0\\microsoft.azure.cognitiveservices.vision.computervision.5.0.0.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.3\\microsoft.codeanalysis.analyzers.2.9.3.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.0\\microsoft.codeanalysis.common.3.3.0.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.3.0\\microsoft.codeanalysis.csharp.3.3.0.nupkg.sha512",
@@ -18,6 +19,8 @@
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.18\\microsoft.rest.clientruntime.2.3.18.nupkg.sha512",
+    "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\microsoft.rest.clientruntime.azure.3.3.18.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.0.0\\microsoft.visualstudio.web.codegeneration.3.0.0.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.0.0\\microsoft.visualstudio.web.codegeneration.contracts.3.0.0.nupkg.sha512",
     "C:\\Users\\jgarc\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.0.0\\microsoft.visualstudio.web.codegeneration.core.3.0.0.nupkg.sha512",
